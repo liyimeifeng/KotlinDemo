@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.EditText
 import kotlinx.android.synthetic.main.activity_main.*;
+import org.jetbrains.anko.onClick
 
 class MainActivity : AppCompatActivity() {
 
@@ -18,6 +19,7 @@ class MainActivity : AppCompatActivity() {
         if (username_edittext.text == null || password_edittext.text == null){
             login.isEnabled = false;
         }
+        login.onClick {  }
     }
 
     fun login(){
